@@ -1,0 +1,107 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eff0be; /* Altere para a cor que preferir */
+  }
+  
+  .caixa-contato {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+  }
+  
+  .info{
+    margin-left: 0px;
+    padding-left: -20px;
+    text-align: left;
+  }
+  
+
+  .info-item h2 {
+    font-size: 1.25em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: left;
+  }
+  
+  .info-item p {
+    color: #555;
+    margin-left: 0px;
+  }
+
+  a{
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+  }
+
+  a:hover{
+    color: blue;
+    text-decoration: underline;
+    
+  }
+
+  
+  /*Estilização do lado do formulário*/
+  .formulario h1 {
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+    padding-left: 60px;
+  }
+  
+  .formulario form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+  }
+  
+  .formulario input,
+  .formulario button {
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .coment{
+    height: 60px;
+  }
+  .formulario button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .formulario button:hover {
+    background-color: #555;
+  }
+  
+  footer a {
+    position: absolute; /* Fixa o botão em relação à viewport */
+    bottom: 10px; /* Posiciona o botão a 10px do fundo da viewport */
+    right: 10px; /* Posiciona o botão a 10px da direita da viewport */
+    background-color: #e0cb52; /* Exemplo de cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 15px; /* Espaçamento interno para aumentar a área de clique */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-family: Arial, sans-serif; /* Tipo de letra do botão */
+    font-size: 0.9em; /* Tamanho da fonte */
+    z-index: 1000; /* Garante que o botão não será sobreposto por outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve para dar profundidade */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para hover */
+  }
+  

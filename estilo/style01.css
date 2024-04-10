@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body{
+    background-image: url('../Imagens/fundo.jpg');
+    max-width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+body::after {
+    content: ""; /* Necessário para que o pseudo-elemento seja renderizado */
+    position: fixed; /* Fixo em relação à janela de visualização */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(63, 62, 62, 0.342); /* Camada preta semi-transparente */
+    z-index: -1; /* Garante que fique acima da imagem de fundo e abaixo do conteúdo do corpo */
+  }
+
+  .conteudo {
+    position: fixed; /* Fixa a div na página */
+    top: 50%; /* Posiciona a metade do caminho para baixo da página */
+    left: 50%; /* Posiciona a metade do caminho para a direita da página */
+    transform: translate(-50%, -50%); /* Centraliza a div */
+    width: 700px;
+    height: 100vh;
+    border-radius: 20px;
+    background-color: rgba(168, 168, 168, 0.774); /* Fundo semi-transparente da div fixa */
+    overflow-y: auto; /* Permite rolagem de texto dentro da div se o conteúdo for maior que a altura */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+  }
+  
+
+ .conteudo ul, dt{
+    list-style-type: none;
+    color: #fff;
+    text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.281);
+    font-size: 1.1em;
+ }
+
+dt{
+    margin-left: 20px;
+}
+
+.conteudo h1, h2{
+    text-align: center; /* Centraliza o texto */
+  color: #ffffff; /* Cor branca, altere conforme necessário */
+  margin: 10px 0; /* Adiciona uma pequena margem acima e abaixo do título */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Exemplo de família de fonte */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  text-decoration: underline;
+}
+audio{
+  display: block; /* O elemento de áudio é tratado como um bloco */
+  margin: 0 auto; /* Margens automáticas à esquerda e à direita para centralizar */
+  width: 400px;
+  padding: 15px;
+}
+
+h3{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.062), rgba(255, 255, 255, 0.123));
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+ 
+footer a {
+    position: absolute; /* Fixa o botão em relação à viewport */
+    bottom: 10px; /* Posiciona o botão a 10px do fundo da viewport */
+    right: 10px; /* Posiciona o botão a 10px da direita da viewport */
+    background-color: #e05252; /* Exemplo de cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 15px; /* Espaçamento interno para aumentar a área de clique */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-family: Arial, sans-serif; /* Tipo de letra do botão */
+    font-size: 0.9em; /* Tamanho da fonte */
+    z-index: 1000; /* Garante que o botão não será sobreposto por outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve para dar profundidade */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para hover */
+  }
+  
+  .back-to-menu:hover, .back-to-menu:focus {
+    background-color: #e05252; /* Cor de fundo quando o mouse está sobre o botão */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Sombra mais destacada quando o mouse está sobre o botão */
+    text-decoration: none; /* Mantém o texto sem sublinhado no hover */
+  }
+  
+
+

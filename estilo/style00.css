@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* General reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url(../Imagens/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff; /* Adjust the color to match the website background */
+}
+
+header {
+    background-color: #333; /* Dark background for the header */
+    color: #fff; /* White text color */
+    font-size: 24px; /* Larger text */
+    padding: 20px; /* Some padding around the text */
+    text-align: center; /* Center the text */
+}
+
+nav {
+    background-color: #f8f8f8; /* Light gray background for the navigation */
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    padding: 10px 0; /* Some padding on top and bottom */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Simple shadow to lift the nav from the page */
+}
+
+nav a {
+    text-decoration: none; /* No underlines on links */
+    color: #333; /* Dark text color for contrast */
+    margin: 0 15px; /* Space out the links */
+    padding: 5px 10px; /* Padding for clickable area */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #e7e7e7; /* Light highlight on hover */
+}
+
+/* Apply specific styles to each of your sections, containers, etc., as needed */

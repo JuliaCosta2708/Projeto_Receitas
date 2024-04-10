@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333; /* Cor de fundo mais escura */
+}
+
+h1 {
+    
+    top: 15px; 
+    text-align: center;
+    color: #fff; /* Cor do texto */
+   
+}
+
+div iframe {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move o vídeo de volta 50% da sua largura e altura */
+    text-align: center;
+}
+
+iframe {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(182, 177, 177, 0.1);
+    width: 800px; /* Largura do vídeo */
+    height: 450px; /* Altura do vídeo */
+}
+
+
+footer a {
+    position: fixed; /* Fixa o botão em relação à viewport */
+    bottom: 10px; /* Posiciona o botão a 10px do fundo da viewport */
+    right: 10px; /* Posiciona o botão a 10px da direita da viewport */
+    background-color: #000000; /* Exemplo de cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 15px; /* Espaçamento interno para aumentar a área de clique */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-family: Arial, sans-serif; /* Tipo de letra do botão */
+    font-size: 0.9em; /* Tamanho da fonte */
+    z-index: 1000; /* Garante que o botão não será sobreposto por outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve para dar profundidade */
+  }
+
+  footer > a:hover{
+    text-decoration: underline;
+    font-size: medium;
+  }
+
